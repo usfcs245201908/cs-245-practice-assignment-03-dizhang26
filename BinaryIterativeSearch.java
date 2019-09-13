@@ -7,7 +7,7 @@ public class BinaryIterativeSearch implements Practice03Search{
 		int high = arr.length - 1;
 		int mid;
 		while (low <= high){
-			mid = (high - low)/2;			
+			mid = (high + low)/2;			
 			if (arr[mid] == target)
 				return mid;
 			else if(arr[mid] > target)

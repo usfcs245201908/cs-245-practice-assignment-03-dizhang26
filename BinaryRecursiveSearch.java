@@ -5,7 +5,7 @@ public class BinaryRecursiveSearch implements Practice03Search{
 	public int search(int[] arr, int target, int low, int high){
 		if (low > high)
 			return -1;
-		int mid = (high - low)/2;
+		int mid = (high + low)/2;
 		if (arr[mid] > target)
 			return search(arr, target, low, mid-1);
 		else if (arr[mid] < target)
