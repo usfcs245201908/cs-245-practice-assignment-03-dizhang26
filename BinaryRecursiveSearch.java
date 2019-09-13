@@ -2,7 +2,7 @@ public class BinaryRecursiveSearch implements Practice03Search{
 	public String searchName(){
 		return "Binary Recursive Search";
 	}
-	public int binReSearch(int[] arr, int target, int low, int high){
+	public int search(int[] arr, int target, int low, int high){
 		if (low > high)
 			return -1;
 		int mid = (high - low)/2;
@@ -18,6 +18,6 @@ public class BinaryRecursiveSearch implements Practice03Search{
 		int low = 0;
 		int high = arr.length - 1;
 
-		return binReSearch(arr, target, low, high);
+		return search(arr, target, low, high);
 	}
 }
