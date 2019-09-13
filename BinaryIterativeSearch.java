@@ -1,6 +1,6 @@
 public class BinaryIterativeSearch implements Practice03Search{
 	public String searchName(){
-		return "BinaryIterativeSearch";
+		return "Binary Iterative Search";
 	}
 	public int search(int[] arr, int target){
 		int low = 0;
